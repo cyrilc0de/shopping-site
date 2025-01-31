@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Sales</title>
+    <link rel="stylesheet" href="ShowMoreF.css">
+</head>
+<body>
+        
+    <div class="nav-links">
+        <a href="index.html"><img src="Images/excuis.PNG"/></a>
+        <ul>
+          <li class="sun"><a href="#">Shopping</a></li>
+          <li><a href="#" class="hover-text">Merchandise</a></li>
+          <li><a href="#" class="hover-text">Accessories</a></li>
+          <li><a href="#" class="hover-text">Our Services</a></li>
+          <li><a href="#" class="hover-text">About Us</a></li>
+          <li><a href="#" class="hover-text">Contact Us</a></li>
+        </ul>
+    </div></br>
+
+    <div class="sort-menu">
+        <label for="sort">Sort By:</label>
+        <select id="sort" onchange="sortProducts()">
+            <option value="default">Default</option>
+            <option value="high-to-low">Price: High to Low</option>
+            <option value="low-to-high">Price: Low to High</option>
+            <option value="clothing">Category: Clothing</option>
+            <option value="jewelries">Category: Jewelries</option>
+            <option value="shoes">Category: Shoes/Sneakers</option>
+            <option value="bags">Category: Bags/Purses</option>
+        </select>
+    </div>
+
+   <section class="featured-container">
+        <h2>HERE ARE SOME OF THE FEATURED ITEMS FOR SALE</h2>
+        <div class="container-grid">
+            
+            <!-- Product Card 1 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="45.50">
+                <img src="Images/Jordans.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Nike Air Jordans(M&W)</h3>
+                    <p class="card-category">$45.50</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card" " data-category="Clothing" data-price="5.60">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card" data-category="Jewelries" data-price="3.40">
+                <img src="Images/Necklace.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Ying And Yang Necklaces(M&W)</h3>
+                    <p class="card-category">$3.40</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Earings.jpeg" data-category="Jewelries" data-price="3.00">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Leaf Theme Earrings</h3>
+                    <p class="card-category">$3.00</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="50.00">
+                <img src="Images/Adidas.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Adidas Campus Black(MEN)</h3>
+                    <p class="card-category">$50.00</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="15.95">
+                <img src="Images/Shoes.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Fashion Men's Shoes</h3>
+                    <p class="card-category">$15.95</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card" data-category="Jewelries" data-price="2.47">
+                <img src="Images/Bracelet.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">High Quality Steel Bracelet(MEN)</h3>
+                    <p class="card-category">$2.47</p>
+                </div>
+            </div>
+
+             
+            <!-- Product Card 8 -->
+            <div class="card" data-category="Bags/Purses" data-price="9.47">
+                <img src="Images/Bag.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags/Purses</p>
+                    <h3 class="card-title">Designer Leather Handbags</h3>
+                    <p class="card-category">$9.47</p>
+                </div>
+            </div>
+                        
+            <!-- Product Card 9 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="45.50">
+                <img src="Images/Nike.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Nike Air Max 90</h3>
+                    <p class="card-category">$45.50</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 10 -->
+            <div class="card" data-category="Bags/Purses" data-price="10.00">
+                <img src="Images/Shoulder.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags/purses</p>
+                    <h3 class="card-title">GG Supreme Ophidia Shoulder Bag(WMEN)</h3>
+                    <p class="card-category">$10.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 11 -->
+            <div class="card" data-category="Bags/Purses" data-price="8.34">
+                <img src="Images/Cross.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags/Purses</p>
+                    <h3 class="card-title">Shoulder Bags Designer Crossbody Bag(MEN)</h3>
+                    <p class="card-category">$8.34</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 12 -->
+            <div class="card" data-category="Clothing" data-price="4.60">
+                <img src="Images/Multilogo.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Off White Multilogo T-Shirts(M&W)</h3>
+                    <p class="card-category">$4.60</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 13 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="40.09">
+                <img src="Images/Low.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Low-Top Fashion Sneakers(WMEN)</h3>
+                    <p class="card-category">$40.09</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 14 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="30.67">
+                <img src="Images/Heels.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Leather High Heels Shoes</h3>
+                    <p class="card-category">$30.67</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 15 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="38.99">
+                <img src="Images/Urban.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">URBANBOX Outdoor Shoes(M&W)</h3>
+                    <p class="card-category">$38.99</p>
+                </div>
+            </div>
+
+             
+            <!-- Product Card 16 -->
+            <div class="card" data-category="Jewelries" data-price="2.33">
+                <img src="Images/Bracelets.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Quality Unisex Fashion Bracelets(M&W)</h3>
+                    <p class="card-category">$2.33</p>
+                </div>
+            </div>
+                        
+            <!-- Product Card 17 -->
+            <div class="card" data-category="Jewelries" data-price="1.56">
+                <img src="Images/Chains.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Fashion Chains(MEN)</h3>
+                    <p class="card-category">$1.56</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 18 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="41.70">
+                <img src="Images/Ace.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneaker</p>
+                    <h3 class="card-title">Gucci Ace Sneakers(M&W)</h3>
+                    <p class="card-category">$41.70</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 19 -->
+            <div class="card" data-category="Clothing" data-price="4.99">
+                <img src="Images/Hoods.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Designer Hoodies(M&W)</h3>
+                    <p class="card-category">$4.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 20 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="36.99">
+                <img src="Images/Flaf.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Fashion Flat Shoes(WMEN)</h3>
+                    <p class="card-category">$36.99</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 21 -->
+            <div class="card" data-category="Clothing" data-price="5.99">
+                <img src="Images/Dress.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Womens Fashion Dresses</h3>
+                    <p class="card-category">5.99</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 22 -->
+            <div class="card" data-category="Jewelries" data-price="3.23">
+                <img src="Images/pendant.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Fashion Women's Luxury Pearl Pendientes</h3>
+                    <p class="card-category">$3.23</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 23 -->
+            <div class="card" data-category="Clothing" data-price="4.12">
+                <img src="Images/Stipe (1).jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Stray Fashion T-Shirts</h3>
+                    <p class="card-category">$4.12</p>
+                </div>
+            </div>
+
+             
+            <!-- Product Card 24 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="49.78">
+                <img src="Images/Air Max.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneaker</p>
+                    <h3 class="card-title">Nike Air High Quality Sneakers(MEN)</h3>
+                    <p class="card-category">$49.78</p>
+                </div>
+            </div>
+                        
+            <!-- Product Card 25 -->
+            <div class="card" data-category="Jewelries" data-price="1.23">
+                <img src="Images/Bears.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Fashion Lost Lady Cute Bear Earrings</h3>
+                    <p class="card-category">$1.23</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 26 -->
+            <div class="card" data-category="Clothing" data-price="4.65">
+                <img src="Images/shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Nike T-Shirts(MEN)</h3>
+                    <p class="card-category">$4.65</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 27 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="40.40">
+                <img src="Images/Adidas3.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Grand Court Shoes(M&W)</h3>
+                    <p class="card-category">$40.40</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 28 -->
+            <div class="card" data-category="Bags/Purses" data-price="3.00">
+                <img src="Images/Cross Bag.png">
+                <div class="card-content">
+                    <p class="card-category">Bags/Purses</p>
+                    <h3 class="card-title">Nike Unisex Cross Bags</h3>
+                    <p class="card-category">$6.40</p>
+                </div>
+            </div>
+
+            <!-- Product Card 29 -->
+            <div class="card" data-category="Shoes/Sneakers" data-price="4.99">
+                <img src="Images/Crocs.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneaker</p>
+                    <h3 class="card-title">Classic Summer Yukon Fashion Crocs</h3>
+                    <p class="card-category">$4.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 30 -->
+            <div class="card" data-category="Jewelries" data-price="3.56">
+                <img src="Images/Ears.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Diamond Lookcz Studded Designer Earrings</h3>
+                    <p class="card-category">$3.56</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 31 -->
+            <div class="card" data-category="Clothing" data-price="5.57">
+                <img src="Images/Sweat.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Men's Designer Sweaters</h3>
+                    <p class="card-category">$5.57</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 32 -->
+            <div class="card" data-category="Jewelries" data-price="2.20">
+                <img src="Images/Gold.png">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Designer Gold Necklaces</h3>
+                    <p class="card-category">$7.28</p>
+                </div>
+            </div>
+        </div> 
+         
+        <a href="index.html" id="Link"><button id="showMoreBtn">Back To Home</button></a>
+
+</section>
+       
+<footer class="footer">
+    <p>&copy; Excuis Online Shopping Web. All Rights Reserved.</p>
+</footer>
+
+<script src="ShowMoreF.js"></script>
+</body>
+</html> 

@@ -1,0 +1,191 @@
+.nav-links{
+    width: 100%;
+    height: 90px;
+    background: palevioletred;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 50s ease;
+    position: sticky;
+    box-shadow: 0px 7px 4.5px lightgrey;
+}
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 9px 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+    transition-duration: .2s;
+
+}
+.nav-links img{
+    width: 200px;
+    height: 90px;
+    padding-left: 60px;
+}
+/* Styling for the text element */
+.hover-text {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;           
+    cursor: pointer;
+    text-decoration: none; /* Remove default underlines */
+    padding: 5px 0;
+    color: black;
+}
+    
+/* The overline effect */
+.hover-text::after {
+    content: '';
+    position: absolute;
+    top: 0; /* Places line above the text */
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.4s ease, left 0.4s ease; /* Controls animation timing */
+}
+    
+/* Hover effect: expand line outward */
+.hover-text:hover::after {
+    width: 100%; /* Expands to full width */
+    left: 0; /* Resets left position to align with text */
+}
+.sun{
+    border: 2px solid whitesmoke;
+    border-radius: 15.5px;
+    width: 105px;
+    height: 30px;
+    background-color: beige;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0px 2px 4px white;
+
+}
+.sun:hover{
+    color: black;
+    font-size: 1.1em;
+
+}
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    height: 90%;
+}
+form {
+    max-width: 600px;
+    padding: 20px;
+}
+label{
+    font-family: Helvetica;
+    font-weight: 600; 
+
+}
+input,select{
+    width: 350px;
+    height:  25px;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-family: Helvetica;
+    padding: 4px;
+    border: 2.5px solid palevioletred;
+    display: flex;
+
+}
+input:hover ,select:hover{
+    width: 350px;
+    height:  25px;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 9px;
+    font-family: Helvetica;
+    padding: 4px;
+    border: 3px solid black;
+}
+button{
+    width: 100px;
+    height: 32px;
+    background-color: palevioletred;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid palevioletred;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-top: 10px;
+    color:white;
+    border-radius: 8px;
+    font-size: 1.4em;
+    transition: .3s ease;
+} 
+button:hover{
+    width: 105px;
+    height: 35px;
+    background-color: rgb(201, 92, 128);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(201, 92, 128);
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 10px;
+    color:white;
+    border-radius: 8px;
+    font-size: 1.4em;
+}           
+h1{
+    font-family: Impact;
+    font-weight: 400;
+    font-size:2em
+}
+h2{
+    font-family: Haettenschweiler;
+    font-weight: 500; 
+    font-size: 1.9em;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    font-size: 1.1em;
+    font-weight: 700;
+    
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    font-size: 1.1em;
+    font-weight: 700;
+
+}
+a{
+    text-decoration: none;
+    color: palegoldenrod;
+}
+a:hover{
+    text-decoration: none;
+    color: goldenrod;
+}
+.footer {
+    background-color: #000;
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}

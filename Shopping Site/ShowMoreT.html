@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ShowMoreF.css">
+</head>
+<body>
+    <div class="nav-links">
+        <a href="index.html"><img src="Images/excuis.PNG"/></a>
+        <ul>
+          <li><a href="index.html" class="hover-text">Home</a></li>
+          <li><a href="#" class="hover-text">Shopping Items</a></li>
+          <li><a href="#" class="hover-text">Accessories</a></li>
+          <li><a href="#" class="hover-text">Our Services</a></li>
+          <li><a href="#" class="hover-text">About Us</a></li>
+          <li><a href="#" class="hover-text">Contact Us</a></li>
+        </ul>
+    </div></br>
+
+    
+    <div class="sort-menu">
+        <label for="sort">Sort By:</label>
+        <select id="sort" onchange="sortProducts()">
+            <option value="default">Default</option>
+            <option value="high-to-low">Price: High to Low</option>
+            <option value="low-to-high">Price: Low to High</option>
+            <option value="clothing">Category: Clothing</option>
+            <option value="jewelries">Category: Jewelries</option>
+            <option value="shoes">Category: Shoes/Sneakers</option>
+            <option value="bags">Category: Bags/Purses</option>
+        </select>
+    </div>
+    
+    <section class="featured-container">
+        <h2>HERE SOME THEME OF THE MONTH SALES</h2>
+        <div class="container-grid">
+            
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+                    
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="Images/Purses.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bags & Purses</p>
+                    <h3 class="card-title">Cute Valentine Day Purses(WMEN)</h3>
+                    <p class="card-category">$15.78</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="Images/Nike Air.jpg">
+                <div class="card-content">
+                    <p class="card-category">Shoes/Sneakers</p>
+                    <h3 class="card-title">Red And Pink Nike Air Force 1 Low(W&M)</h3>
+                    <p class="card-category">$40.36</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="Images/Ear.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Beaded Valentine Earrings</h3>
+                    <p class="card-category">$2.99</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card">
+                <img src="Images/Cupid.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">Valentine's Day Cupid Arch Earrings</h3>
+                    <p class="card-category">$2.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 5 -->
+            <div class="card">
+                <img src="Images/T-Shirt.jpg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Fashion Love Design Valentine Couples T-Shirt-Red</h3>
+                    <p class="card-category">$4.34</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 6 -->
+            <div class="card">
+                <img src="Images/Love.jpg">
+                <div class="card-content">
+                    <p class="card-category">Jewelries</p>
+                    <h3 class="card-title">2pcs/set Love Heart Couple Necklaces(M&W)</h3>
+                    <p class="card-category">$3.54</p>
+                </div>
+            </div>
+
+                        
+            <!-- Product Card 7 -->
+            <div class="card">
+                <img src="Images/Duvet.jpg">
+                <div class="card-content">
+                    <p class="card-category">Bedding</p>
+                    <h3 class="card-title">Valentine's Day Couple Duvet Cover</h3>
+                    <p class="card-category">$4.57</p>
+                </div>
+            </div>
+
+
+            <!-- Product Card 8 -->
+            <div class="card">
+                <img src="Images/Cute.jpeg">
+                <div class="card-content">
+                    <p class="card-category">Clothing</p>
+                    <h3 class="card-title">Cute Couple Sweaters(M&W)</h3>
+                    <p class="card-category">$5.60</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a href="index.html" id="Link"><button id="showMoreBtn">Back To Home</button></a>
+
+    <script src="ShowMoreT.js"></script>
+
+    <footer class="footer">
+        <p>&copy; Excuis Online Shopping Web. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
